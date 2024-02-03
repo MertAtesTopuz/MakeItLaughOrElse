@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TargetPos
+  - TargetPath1
+  - TargetPath2
+  - TargetPath3
+  - JokeSprite
+  - Spawner
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Npc
+  - Edge
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 167715439
+    locked: 0
+  - name: Area
+    uniqueID: 2535731855
+    locked: 0
+  - name: Player
+    uniqueID: 2496064905
+    locked: 0
+  - name: Build
+    uniqueID: 1705000765
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2121535883
+    locked: 0
