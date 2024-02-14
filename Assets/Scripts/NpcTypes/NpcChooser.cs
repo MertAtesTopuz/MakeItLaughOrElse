@@ -20,9 +20,14 @@ public class NpcChooser : MonoBehaviour
     public int posI;
     public Transform traSetter;
     public NpcInterraction inter;
+    private Animator anim;
+    private Rigidbody2D rb;
+    private int randomTime;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         spi = GetComponent<SpriteRenderer>();
         target = GameObject.FindGameObjectWithTag("TargetPos").transform;
         path1 = GameObject.FindGameObjectWithTag("TargetPath1");
@@ -74,6 +79,9 @@ public class NpcChooser : MonoBehaviour
     private void Move()
     {
         transform.position = Vector3.MoveTowards(transform.position, targetVec, speed * Time.deltaTime);
+
+        anim.SetFloat("moveX", targetVec.x - transform.position.x);
+        anim.SetFloat("moveY", targetVec.y - transform.position.y);
     }
 
     private IEnumerator PathAdder()
@@ -82,9 +90,10 @@ public class NpcChooser : MonoBehaviour
 
         if (transform.position == targetVec || transform.position == targetPath[posI].position)
         {
+            Transform lastElement2 = targetPath[targetPath.Count -1];
+
             if(posI < targetPath.Count -1)
             {
-                
                 if(TimeManager.instance.isNightS == false && inter.interControl == true)
                 {
                     targetVec = targetPath[posI+1].position;
@@ -92,18 +101,34 @@ public class NpcChooser : MonoBehaviour
                 }
                 else if(TimeManager.instance.isNightS == true || inter.interControl == false)
                 {
-                    Transform lastElement2 = targetPath[targetPath.Count -1];
                     targetVec = lastElement2.transform.position;
-                }
+                } 
             }
             else
             {
                 Debug.Log("sa");
             }
 
+/*
+            if(transform.position == lastElement2.position)
+            {
+                //Destroy(gameObject);
+                Debug.Log("as");
+            }
+            */
             
         }
-        yield return new WaitForSeconds(10);
+
+        anim.SetFloat("moveX", targetVec.x - transform.position.x);
+        anim.SetFloat("moveY", targetVec.y - transform.position.y);
+
+        randomTime = Random.Range(5,10);
+
+        yield return new WaitForSeconds(randomTime);
+
+        anim.SetFloat("lastMoveX", targetVec.x - transform.position.x);
+        anim.SetFloat("lastMoveY", targetVec.y - transform.position.y);
+
         StartCoroutine(PathAdder());
         
     }

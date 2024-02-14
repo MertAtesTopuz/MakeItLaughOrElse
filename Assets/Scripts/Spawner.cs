@@ -34,25 +34,19 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-         NpcQueue();
-        
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            if(npcList.Count > 2)
-            {
-                npcList[1].GetComponent<NpcChooser>().targetVec = firstObjTarget;
-
-                Destroy(npcList[0]);
-                npcList.RemoveAt(0);
-            }
-            
-        }       
+         NpcQueue();      
     }
 
     private void NpcQueue()
     {
         for (int i = 0; i < npcList.Count; i++)
         {
+            if(npcList[i] == null)
+            {
+                npcList.RemoveAt(i);
+                UIController.instance.currentCapacity --;
+            }
+
             if(npcList.Count > 1)
             {
                 firstObjTarget = npcList[i].GetComponent<NpcChooser>().targetVec;
@@ -112,9 +106,6 @@ public class Spawner : MonoBehaviour
             UIController.instance.currentCapacity ++;
         }
         
-        if (UIController.instance.maxCapasity > UIController.instance.currentCapacity)
-        {
-            StartCoroutine(SpawnTimer());
-        }
+        StartCoroutine(SpawnTimer());
     }
 }

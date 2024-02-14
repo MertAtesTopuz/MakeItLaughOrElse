@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnMovement(InputValue value)
     {
-        movement = value.Get<Vector2>();
+        movement = value.Get<Vector2>().normalized;
     }
 
     private void FixedUpdate()

@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 8013082182189122438}
   - component: {fileID: 6155697375705263182}
   - component: {fileID: 7413298746560124512}
+  - component: {fileID: 1821083251479818497}
   m_Layer: 0
   m_Name: NPC6
   m_TagString: Untagged
@@ -193,7 +194,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jokeSprite: {fileID: 2732872536449657033}
-  mainType: {fileID: 11400000, guid: f56f442e8d0b94fc19bae6e3e9dc83c4, type: 2}
+  mainType: {fileID: 11400000, guid: 5bd2d86632e2344609875467275b22dd, type: 2}
   target: {fileID: 0}
   targetVec: {x: 0, y: 0, z: 0}
   targetVecCheck: {x: 0, y: 0, z: 0}
@@ -234,6 +235,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1821083251479818497
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438413673407684244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6b233d84f6d04b2db1408c92d537831, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2732872536449657033
 GameObject:
   m_ObjectHideFlags: 0

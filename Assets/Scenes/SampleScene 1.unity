@@ -1792,6 +1792,10 @@ PrefabInstance:
       value: Sapwner
       objectReference: {fileID: 0}
     - target: {fileID: 2317365255600829211, guid: a550e2185d4884fc09f4fd6769f83b6d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2317365255600829211, guid: a550e2185d4884fc09f4fd6769f83b6d, type: 3}
       propertyPath: m_TagString
       value: Spawner
       objectReference: {fileID: 0}
