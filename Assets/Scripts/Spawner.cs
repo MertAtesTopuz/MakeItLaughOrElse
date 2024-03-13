@@ -105,7 +105,9 @@ public class Spawner : MonoBehaviour
             npcList.Add(spawnedNpc);
             UIController.instance.currentCapacity ++;
         }
-        
+        yield return null;
         StartCoroutine(SpawnTimer());
+        
+        
     }
 }

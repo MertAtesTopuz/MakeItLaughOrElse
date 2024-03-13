@@ -109,13 +109,12 @@ public class NpcChooser : MonoBehaviour
                 Debug.Log("sa");
             }
 
-/*
+
             if(transform.position == lastElement2.position)
             {
-                //Destroy(gameObject);
+                Destroy(gameObject);
                 Debug.Log("as");
             }
-            */
             
         }
 
