@@ -44,13 +44,13 @@ public class UIController : MonoBehaviour
 
         if(TimeManager.instance.isNight == true)
         {
-            if(CurrencySliderController.instance.currencyValue <= 8000)
+            if(CurrencySliderController.instance.currencyValue <= 800)
             {
                 
                 badPnl.SetActive(true);
                
             }
-            else if(CurrencySliderController.instance.currencyValue > 8000)
+            else if(CurrencySliderController.instance.currencyValue > 800)
             {
                 
                 goodPnl.SetActive(true);

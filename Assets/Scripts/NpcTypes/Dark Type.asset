@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dark Type
   m_EditorClassIdentifier: 
   type: Dark Joke
-  jokeSpi: {fileID: 474698728, guid: f1235352fbd284cbc8048f410ca3fb85, type: 3}
+  jokeSpi: {fileID: -340799351, guid: be8b8b4faad7b46e087e06a91d9d5736, type: 3}

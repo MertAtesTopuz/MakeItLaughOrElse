@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Object Type
   m_EditorClassIdentifier: 
   type: Object Joke
-  jokeSpi: {fileID: -1229416697, guid: f1235352fbd284cbc8048f410ca3fb85, type: 3}
+  jokeSpi: {fileID: -493146685, guid: be8b8b4faad7b46e087e06a91d9d5736, type: 3}

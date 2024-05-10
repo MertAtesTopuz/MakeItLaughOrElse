@@ -88,8 +88,8 @@ MonoBehaviour:
   obje: 0
   triggerControl: 0
   interControl: 0
-  happyFeeling: {fileID: 7482667652216324306, guid: 0c1314ba22f4f4c5ca50dba7d289e72b, type: 3}
-  angryFeeling: {fileID: 7482667652216324306, guid: 943945431615a46dabc7d9fbce26170f, type: 3}
+  happyFeeling: {fileID: 21300000, guid: 60c68cff0704d41138750b3a6b47b9f8, type: 3}
+  angryFeeling: {fileID: 21300000, guid: fc2660b6cd45e432dbfa115557922da6, type: 3}
   jokeSpi: {fileID: 949709553619053634}
 --- !u!1 &2438413673407684244
 GameObject:
